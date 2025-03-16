@@ -1,0 +1,112 @@
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 95%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 2px solid #e0e0e0; 
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+
+.box:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+    border: 2px solid #007bff; 
+}
+
+
+.info {
+    margin-bottom: 20px;
+}
+
+
+.nomeCognome {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.actions button {
+    padding: 12px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+
+.viewButton {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.viewButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.editButton {
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: bold;
+}
+
+.editButton:hover {
+    background-color: #ec971f;
+    transform: scale(1.05);
+}
+
+
+.deleteButton {
+    background-color: #d9534f;
+    color: white;
+    font-weight: bold;
+}
+
+.deleteButton:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+

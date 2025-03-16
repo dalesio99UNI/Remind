@@ -1,0 +1,204 @@
+.wrap_generico{
+    /* width: 650px; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* position: absolute; */
+    /* top: 64%; */
+}
+
+.pre_game{
+    font-size: 30px;
+}
+
+.wrapper_horizontal_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spawn_area{
+    width: 1100px;
+    height: 640px;
+    border: 2px solid darkmagenta;
+    background-color: lightgrey;
+}
+
+.figura_cliccabile{
+    position: absolute;
+    background-color: darkred;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.explanation{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.round{
+    font-size: 25px;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.horizontal_line{
+    width: 99.5%;
+    border: 1px solid rgb(233, 33, 131);
+    margin: 5px;
+}
+
+.risposte_corrette{
+    border: 2px solid rgb(233, 33, 131);
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.CORRECT{
+    color: green;
+    margin: 10px;
+}
+
+.WRONG{
+    color: red;
+    margin: 10px;
+}
+
+.animazione_n1_EASY{
+    /* left: 660px; */
+    animation: muoviFigura_n1_EASY 10s infinite forwards;
+}
+
+.animazione_n2_EASY{
+    /* left: 560px; */
+    animation: muoviFigura_n2_EASY 15s infinite alternate forwards;
+}
+
+.animazione_n3_EASY{
+    /* left: 560px; */
+    animation: muoviFigura_n3_EASY 15s infinite alternate forwards;
+}
+
+@media screen and (max-width: 1550px) {
+    .spawn_area{
+        width: 950px;
+    }
+
+    .round{
+        font-size: 20px;
+    }
+
+    .risposte_corrette{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .spawn_area{
+        height: 540px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .spawn_area{
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .pre_game{
+        font-size: 18px;
+    }
+}
+
+@keyframes muoviFigura_n1_EASY {
+    10%{
+        transform: translateX(-10vw);
+    }
+    20%{
+        transform: translateX(-15vw) translateY(10vh);
+    }
+    30%{
+        transform: translateX(2vw) translateY(30vh);
+    }
+    40%{
+        transform: translateX(20vw) translateY(25vh);
+    }
+    50%{
+        transform: translateX(15vw) translateY(8vh);
+    }
+    60%{
+        transform: translateX(21vw) translateY(10vh);
+    }
+    70%{
+        transform: translateX(25vw) translateY(-5vh);
+    }
+    80%{
+        transform: translateX(5vw) translateY(20vh);
+    }
+}
+
+@keyframes muoviFigura_n2_EASY {
+    10%{
+        transform: translateY(-10vh);
+    }
+    20%{
+        transform: translateX(-20vw) translateY(-9vh);
+    }
+    30%{
+        transform: translateX(-25vw) translateY(17vh);
+    }
+    40%{
+        transform: translateX(-23vw) translateY(24vh);
+    }
+    50%{
+        transform: translateX(-11vw) translateY(8vh);
+    }
+    60%{
+        transform: translateX(4vw) translateY(-10vh);
+    }
+    70%{
+        transform: translateX(20vw) translateY(8vh);
+    }
+    80%{
+        transform: translateX(5vw) translateY(20vh);
+    }
+    90%{
+        transform: translateX(-5vw) translateY(16vh);
+    }
+}
+
+@keyframes muoviFigura_n3_EASY {
+    10%{
+        transform: translateY(10vh);
+    }
+    20%{
+        transform: translateX(-22vw) translateY(-9vh);
+    }
+    30%{
+        transform: translateX(5vw) translateY(-1vh);
+    }
+    40%{
+        transform: translateX(13vw) translateY(21vh);
+    }
+    50%{
+        transform: translateX(1vw) translateY(8vh);
+    }
+    60%{
+        transform: translateX(14vw) translateY(-10vh);
+    }
+    70%{
+        transform: translateX(20vw) translateY(8vh);
+    }
+    80%{
+        transform: translateX(8vw) translateY(20vh);
+    }
+    90%{
+        transform: translateX(-5vw) translateY(16vh);
+    }
+}

@@ -1,0 +1,45 @@
+.wrapper_welcome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #62D2AD, #3A6F6D); 
+
+    color: #232931;
+    padding: 20px;
+}
+
+.card_content {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333; 
+}
+
+.description_text {
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+   
+}
+
+
+.img_size {
+    width: 90%;
+    margin: 3px auto; 
+    object-fit: contain; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; 
+}
+
+
+.wrapper_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

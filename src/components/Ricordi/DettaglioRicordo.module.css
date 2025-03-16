@@ -1,0 +1,149 @@
+
+.container {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.ricordoDetails {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ricordoDetails h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.ricordoDetails p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.ricordoDetails strong {
+    color: #333;
+}
+
+
+.multimedia {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mediaItem {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mediaItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.media {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mediaItem img {
+    object-fit: cover;
+    max-height: 250px;
+    border-radius: 8px;
+}
+
+.mediaItem video {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+}
+
+
+.backButton {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.backButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1024px) {
+    .multimedia {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .ricordoDetails {
+        padding: 15px;
+    }
+
+    .multimedia {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.filterBar select,
+.filterBar input {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filterBar select {
+    width: 200px;
+}
+
+.filterBar input {
+    width: 300px;
+}
+
+.filterBar button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filterBar button:hover {
+    background-color: #0056b3;
+}

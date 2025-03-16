@@ -1,0 +1,149 @@
+.title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper_flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable_list{
+    overflow-y: auto;
+    height: 800px;
+}
+
+.scrollable_list::-webkit-scrollbar{
+    width: 8px;
+}
+
+.list_group{
+    width: 100%;
+}
+
+.list_item{
+    width: 100%;
+}
+
+.wrapper_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    width: 800px;
+    height: fit-content;
+    max-height: 640px;
+    /* border: 2px solid #1E56A0; */
+    border-radius: 8px;
+    background-color: white;
+    padding: 2px;
+}
+
+.wrapper_list::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 8px;
+}
+.wrapper_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 600px; */
+}
+
+.wrapper_horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.wrap_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.card_content_FULLNAME{
+    /* padding: 5px; */
+    margin: 5px;
+    /* margin-left: 10px; */
+    font-size: 24px;
+    min-width: 340px;
+    text-align: left;
+}
+.card_content_DATA{
+    margin: 5px;
+    padding: 5px;
+    font-size: 24px;
+    min-width: 200px;
+}
+
+.input_checkbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border: 2px solid blue;
+}
+
+.checkbox_assigned{
+    width: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    .scrollable_list{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .scrollable_list{
+        overflow-y: scroll;
+        height: 700px;
+        width: 90%;
+    }
+
+    .wrapper_flexible{
+        width: 90%;
+        flex-direction: column;
+    }
+    .card_content_FULLNAME{
+        min-width: 100%;
+        font-size: 18px;
+    }
+    .card_content_DATA{
+        min-width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 980px) {
+    .scrollable_list{
+        height: 750px;
+    }
+}
+@media screen and (max-height: 880px) {
+    .scrollable_list{
+        height: 650px;
+    }
+}
+@media screen and (max-height: 780px) {
+    .scrollable_list{
+        height: 550px;
+    }
+}
+@media screen and (max-height: 680px) {
+    .scrollable_list{
+        height: 450px;
+    }
+}
+@media screen and (max-height: 580px) {
+    .scrollable_list{
+        height: 350px;
+    }
+}

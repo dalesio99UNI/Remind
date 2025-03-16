@@ -1,0 +1,198 @@
+.wrap_generico{
+    /* width: 650px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pre_game{
+    color: #163172;
+    font-size: 30px;
+}
+
+.wrapper_gioco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.explanation{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.domanda{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.suggerimento_style{
+    font-size: 15px;
+}
+
+.risposte_corrette{
+    border: 2px solid #163172;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.CORRECT{
+    color: green;
+    font-size: 18px;
+}
+
+.WRONG{
+    color: red;
+    font-size: 18px;
+}
+
+.horizontal_line{
+    width: 99.5%;
+    border: 1px solid rgb(233, 33, 131);
+    margin: 5px;
+}
+
+.wrapper_horizontal_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prova_rettangoli_lettere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 84px;
+    height: 84px;
+    border-bottom: 2px solid #163172;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
+    font-size: 38px;
+    font-weight: bold;
+}
+.prova_rettangoli_lettera_mancante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 84px;
+    height: 84px;
+    border: none;
+    border-bottom: 2px solid blue;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1550px) {
+    .prova_rettangoli_lettere{
+        width: 66px;
+        height: 66px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper_gioco{
+        height: calc(100vh - 150px);
+    }
+
+    .wrap_generico{
+        height: calc(100vh - 100px);
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .prova_rettangoli_lettere{
+        width: 50px;
+        height: 50px;
+    }
+    .prova_rettangoli_lettera_mancante{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .pre_game{
+        font-size: 18px;
+    }
+
+    .prova_rettangoli_lettere{
+        width: 40px;
+        height: 40px;
+    }
+    .prova_rettangoli_lettera_mancante{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .domanda{
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .suggerimento_style{
+        font-size: 12px;
+    }
+
+    .risposte_corrette{
+        font-size: 16px;
+        margin: 10px;
+        padding: 4px;
+    }
+
+    .prova_rettangoli_lettere{
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
+    .prova_rettangoli_lettera_mancante{
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .domanda{
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .suggerimento_style{
+        font-size: 11px;
+    }
+
+    .risposte_corrette{
+        font-size: 16px;
+        margin: 10px;
+        padding: 4px;
+    }
+
+    .prova_rettangoli_lettere{
+        width: 22px;
+        height: 22px;
+        font-size: 20px;
+    }
+    .prova_rettangoli_lettera_mancante{
+        width: 22px;
+        height: 22px;
+        font-size: 20px;
+    }
+}

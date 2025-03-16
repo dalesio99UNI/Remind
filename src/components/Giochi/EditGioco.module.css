@@ -1,0 +1,88 @@
+.wrapper_impostazioni_gioco{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper_generico{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.title_scheda{
+    font-size: 23px;
+    text-align: center;
+    margin: 4px;
+    margin-bottom: 5px;
+}
+
+.label_style{
+    font-size: 16px;
+    margin: 2px;
+    text-align: center;
+}
+
+.textbox_style{
+    width: 40%;
+    height: 25px;
+    font-size: 16px;
+    border: 2px solid #1E56A0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.textbox_style_NOT_ALLOWED{
+    width: 40%;
+    height: 25px;
+    font-size: 16px;
+    border: 2px solid #1E56A0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+.textbox_style:focus{
+    border: 2px solid #163172;
+    background-color: #D6E4F0;
+    outline: none;
+}
+
+@media screen and (max-width: 1550px) {
+    .label_style{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .wrapper_impostazioni_gioco{
+        /* width: 700px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textbox_style, .textbox_style_NOT_ALLOWED, .select_style{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .wrapper_impostazioni_gioco{
+        /* width: 340px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

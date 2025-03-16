@@ -1,0 +1,59 @@
+.App {
+  background-color: #282c34;
+  background-image: linear-gradient(180deg, #62D2AD, #3A6F6D);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap_schermata{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(58, 111, 109, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D6E4F0;
+  border: 1px solid rgba(58, 111, 109, 0.5);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .App{
+    flex-direction: column;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #163172;
+    border-radius: 4px;
+  }
+}
+
+/* @media (orientation: portrait) {
+  .App {
+    height: 100vh;
+    width: 100vw;
+  }
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+} */

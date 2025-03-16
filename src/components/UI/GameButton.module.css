@@ -1,0 +1,97 @@
+.game_button{
+    width: 230px;
+    min-height: 70px;
+    height: fit-content;
+    background-color: rgb(236, 236, 236);
+    color: rgb(33, 33, 131);
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(33, 33, 131);
+    border-radius: 5px;
+    animation: comparire 1s normal forwards linear;
+}
+
+.game_button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px black;
+    transition: 0.1s;
+}
+
+.is_disabled:disabled{
+    cursor: not-allowed;
+    animation: vagiuu 3s normal forwards ease-in;
+}
+
+.correct_answer{
+    background-color: forestgreen;
+    color: white;
+    transition: 0.2s;
+}
+
+.wrong_answer{
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1700px) {
+    .game_button{
+        width: 220px;
+        min-height: 60px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .game_button{
+        width: 200px;
+        min-height: 60px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .game_button{
+        min-height: 46px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .game_button{
+        width: 140px;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+@keyframes comparire {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 70%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes vagiuu {
+    0%{
+        transform: translateY(0%);
+    }
+    5%{
+        transform: translateY(1%);
+    }
+    10%{
+        transform: translateY(2%);
+    }
+    15%{
+        transform: translateY(3%);
+    }
+    50%{
+        transform: translateY(4%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+}

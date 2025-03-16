@@ -1,0 +1,340 @@
+.outer_wrapper_table{
+    margin: 10px;
+    width: 90%;
+    max-height: 780px;
+    overflow-y: scroll;
+    box-shadow: 1px 2px 8px 3px rgba(58, 111, 109, 0.5);;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(180deg, #62D2AD, #3A6F6D);
+}
+
+.outer_wrapper_table::-webkit-scrollbar, .outer_wrapper_table::-webkit-scrollbar-thumb{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table_wrapper{
+    /* border-radius: 12px; */
+    width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: separate;
+    /* height: 800px; */
+    /* table-layout: fixed; */
+}
+
+/* .table_wrapper tbody, .table_wrapper thead, .table_wrapper tr, .table_wrapper th, .table_wrapper td{
+    display: block;
+} */
+
+.table_wrapper thead th{
+    /* border: 1px solid #D6E4F0; */
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    /* padding-left: 20px; */
+}
+
+.intestazione_tabella{
+    background-image: linear-gradient(180deg, #53cfa6, #3A6F6D);
+    height: 50px;
+    font-size: 20px;
+    color: #E0E0E0;
+}
+
+.table_wrapper tbody td{
+    border-bottom: 1px solid #D6E4F0;
+    text-align: center;
+    background-color: #B7E0D2;
+    /* padding-left: 20px; */
+}
+
+.dati_tabella{
+    /* width: 350px; */
+    cursor: pointer;
+    background-color: transparent;
+    color: #000;
+    /* border: 1px solid #D6E4F0; */
+    font-size: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 60px;
+}
+
+.table_wrapper tr{
+    background-color: #B7E0D2;
+}
+.table_wrapper tr:hover .dati_tabella{
+    background-color: #3A6F6D;
+    color: white;
+    transition: 0.2s;
+}
+
+.table_wrapper .buttons_row {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.table_wrapper .buttons_row:active {
+    background-color: #62D2AD; 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.intestazione_tabella.nome, .intestazione_tabella.cognome, .dati_tabella.nome, .dati_tabella.cognome{
+    /* width: 250px; */
+}
+
+.intestazione_tabella.città, .dati_tabella.città{
+    max-width: 160px;
+}
+
+.intestazione_tabella.codicefiscale, .dati_tabella.codicefiscale{
+    /* width: 250px; */
+}
+
+.intestazione_tabella.data, .dati_tabella.data{
+    max-width: 120px;
+}
+
+.intestazione_tabella.opzioni, .dati_tabella.opzioni{
+    /* width: 160px; */
+}
+
+@media screen and (max-width: 1750px){
+    .table_wrapper{
+        /* width: 950px; */
+    }
+
+    .intestazione_tabella{
+        /* color: orange; */
+        font-size: 18px;
+    }
+    .dati_tabella{
+        /* color: orange; */
+        font-size: 18px;
+    }
+
+    .intestazione_tabella.nome, .intestazione_tabella.cognome, .intestazione_tabella.città, .dati_tabella.nome, .dati_tabella.cognome, .dati_tabella.città{
+        /* width: 190px; */
+    }
+
+    .intestazione_tabella.codicefiscale, .dati_tabella.codicefiscale{
+        /* width: 200px; */
+    }
+
+    .intestazione_tabella.data, .intestazione_tabella.attività, .dati_tabella.data, .dati_tabella.attività{
+        /* width: 160px; */
+    }
+
+    .intestazione_tabella.opzioni, .dati_tabella.opzioni{
+        /* width: 150px; */
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .table_wrapper{
+        /* width: 900px; */
+    }
+
+    .intestazione_tabella, .dati_tabella{
+        /* color: red; */
+        font-size: 17px;
+        height: 65px;
+    }
+
+    .intestazione_tabella.nome, .intestazione_tabella.cognome, .intestazione_tabella.città, .dati_tabella.nome, .dati_tabella.cognome, .dati_tabella.città{
+        /* width: 150px; */
+    }
+
+    .intestazione_tabella.data, .intestazione_tabella.attività, .dati_tabella.data, .dati_tabella.attività{
+        /* width: 120px; */
+    }
+
+    .intestazione_tabella.codicefiscale, .dati_tabella.codicefiscale{
+        /* width: 150px; */
+    }
+
+    .intestazione_tabella.opzioni, .dati_tabella.opzioni{
+        /* width: 140px; */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* .table_wrapper{
+        width: 850px;
+    } */
+
+    .intestazione_tabella, .dati_tabella{
+        /* color: limegreen; */
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .intestazione_tabella.nome, .intestazione_tabella.cognome, .dati_tabella.nome, .dati_tabella.cognome{
+        /* width: 250px; */
+    }
+    
+    .intestazione_tabella.città, .dati_tabella.città{
+        /* width: 180px; */
+    }
+
+    .intestazione_tabella.data, .intestazione_tabella.attività, .dati_tabella.data, .dati_tabella.attività{
+        /* width: 110px; */
+    }
+
+    .intestazione_tabella.codicefiscale, .dati_tabella.codicefiscale{
+        /* display: none; */
+    }
+
+    .intestazione_tabella.data, .dati_tabella.data{
+        /* width: 140px; */
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    /* .table_wrapper{
+        width: 800px;
+    } */
+
+    .intestazione_tabella, .dati_tabella{
+        /* color: lightcoral; */
+        font-size: 15px;
+        /* height: 100px; */
+    }
+
+    .intestazione_tabella.nome, .intestazione_tabella.cognome, .intestazione_tabella.città, .dati_tabella.nome, .dati_tabella.cognome, .dati_tabella.città{
+        /* width: 100px; */
+    }
+
+    .intestazione_tabella.data, .intestazione_tabella.attività, .dati_tabella.data, .dati_tabella.attività{
+        /* width: 110px; */
+    }
+
+    .intestazione_tabella.codicefiscale, .dati_tabella.codicefiscale{
+        /* width: 150px; */
+    }
+
+    .intestazione_tabella.data, .dati_tabella.data{
+        /* width: 100px; */
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    /* .table_wrapper{
+        width: 500px;
+    } */
+
+    .intestazione_tabella{
+        font-size: 13px;
+    }
+
+    .dati_tabella{
+        font-size: 13px;
+    }
+
+    .intestazione_tabella.nome, .intestazione_tabella.cognome, .dati_tabella.nome, .dati_tabella.cognome{
+        /* width: 80px; */
+    }
+
+    .intestazione_tabella.città, .dati_tabella.città{
+        display: none;
+    }
+
+    .intestazione_tabella.data, .dati_tabella.data{
+        /* width: 80px; */
+    }
+
+    .mobile_row{
+        display: table-row;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    /* .table_wrapper{
+        width: 400px;
+    } */
+
+    .intestazione_tabella{
+        font-size: 12px;
+    }
+
+    .intestazione_tabella.nome, .intestazione_tabella.cognome, .dati_tabella.nome, .dati_tabella.cognome{
+        /* width: 60px; */
+    }
+
+    .intestazione_tabella.codicefiscale, .dati_tabella.codicefiscale{
+        /* width: 90px; */
+    }
+
+    .intestazione_tabella.data, .dati_tabella.data{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-height: 950px) {
+    .outer_wrapper_table{
+        max-height: 720px;
+    }
+}
+@media screen and (max-height: 900px) {
+    .outer_wrapper_table{
+        max-height: 660px;
+    }
+}
+@media screen and (max-height: 850px) {
+    .outer_wrapper_table{
+        max-height: 600px;
+    }
+}
+@media screen and (max-height: 800px) {
+    .outer_wrapper_table{
+        max-height: 560px;
+    }
+}
+@media screen and (max-height: 750px) {
+    .outer_wrapper_table{
+        max-height: 500px;
+    }
+}
+@media screen and (max-height: 700px) {
+    .outer_wrapper_table{
+        max-height: 460px;
+    }
+}
+@media screen and (max-height: 650px) {
+    .outer_wrapper_table{
+        max-height: 400px;
+    }
+}
+@media screen and (max-height: 600px) {
+    .outer_wrapper_table{
+        max-height: 350px;
+    }
+}
+@media screen and (max-height: 550px) {
+    .outer_wrapper_table{
+        max-height: 300px;
+    }
+}
+@media screen and (max-height: 500px) {
+    .outer_wrapper_table{
+        max-height: 250px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .outer_wrapper_table{
+        max-height: 200px;
+    }
+}

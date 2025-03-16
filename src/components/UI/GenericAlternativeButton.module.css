@@ -1,0 +1,128 @@
+.alternative_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    width: 180px;
+    height: 38px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    background-color: #5FD1AC;
+    animation: animaz 1.2s forwards ease-in-out;
+}
+
+.alternative_button:hover{
+    background-color: #4CA88A;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: #000;
+    transition: 0.3s;
+}
+
+.alternative_button:active{
+    color: #D6E4F0;
+    transition: 0.2s;
+}
+
+.alternative_button:disabled{
+    background-color: rgb(0, 0, 60);
+    border: 2px solid transparent;
+    cursor: not-allowed;
+    /* pointer-events: none; */
+}
+
+.bottone_piccolo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: #5FD1AC;
+    animation: animaz 1.2s forwards ease-in-out;
+}
+
+.bottone_piccolo:hover{
+    background-color: #11275a;
+    border: 2px solid #D6E4F0;
+    color: #D6E4F0;
+    transition: 0.3s;
+}
+
+.bottone_piccolo:active{
+    color: #D6E4F0;
+    transition: 0.2s;
+}
+
+.colore_rosso{
+    background-color: #f73d30;
+    border-radius: 18px;
+}
+
+.colore_rosso:hover{
+    background-color:#B71C1C;
+}
+
+@media screen and (max-width: 1550px) {
+    .alternative_button{
+        width: 160px;
+        height: 30px;
+        font-size: 14px;
+        margin: 2px;
+    }
+
+    .bottone_piccolo{
+        width: 90px;
+        height: 25px;
+        font-size: 14px;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .alternative_button{
+        width: 110px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .bottone_piccolo{
+        width: 80px;
+        font-size: 13px;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
+    .alternative_button{
+        width: 130px;
+        height: 30px;
+        font-size: 12px;
+        margin: 2px;
+    }
+} */
+
+@keyframes animaz {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 40%;
+    }
+    75%{
+        opacity: 60%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}

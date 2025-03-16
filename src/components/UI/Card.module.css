@@ -1,0 +1,50 @@
+
+
+
+.generic_wrapper{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    background-color: #E8F6F3;
+    border: 1px solid #3C6E71; 
+    border-radius: 10px;
+    color: #232931; 
+}
+
+.backgroundBlue{
+    background-color: #A8E6CF; 
+}
+
+.animazione{
+    opacity: 0;
+    animation: 1s 1 normal slidein forwards;
+}
+
+.altroStile{
+    box-shadow: 10px 10px 15px rgba(35, 41, 49, 0.2); 
+}
+
+.stileHover:hover{
+    background-color: #B6F2DA; 
+    cursor: pointer;
+    animation: 0.3s 1 normal slidein forwards;
+}
+
+@media screen and (max-width: 600px) {
+    .generic_wrapper{
+        margin: 5px;
+        margin-bottom: 16px;
+    }
+}
+
+@keyframes slidein {
+    0%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}

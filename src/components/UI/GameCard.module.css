@@ -1,0 +1,69 @@
+.item_gioco{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    list-style-type: none;
+    width: 49vw;
+    border: 2px solid #1E56A0;
+    border-radius: 10px;
+    margin: 15px;
+    margin-left: 5px;
+    padding: 5px;
+    box-shadow: 0 1px 5px 1px rgb(33, 33, 131);
+    transition: 0.2s;
+    animation: animazione 1.5s normal;
+}
+
+.item_gioco:hover{
+    background-color: #D6E4F0;
+    box-shadow: 0 1px 15px 1px rgb(33, 33, 131);
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+    .item_gioco{
+        width: 650px;
+        margin: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .item_gioco{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .item_gioco{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .item_gioco{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .item_gioco{
+        width: 300px;
+    }
+}
+
+@keyframes animazione {
+    0%{
+        opacity: 10%;
+    }
+    25%{
+        opacity: 40%;
+    }
+    50%{
+        transform: translateX(-3%);
+        opacity: 65%;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}

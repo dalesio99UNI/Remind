@@ -1,0 +1,183 @@
+.wrapper {
+    width: 100%;
+    background: linear-gradient(180deg, #62D2AD, #3A6F6D); 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.center_elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; 
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+
+.img_size {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 360px;
+    margin-bottom: 30px; 
+}
+
+
+.title {
+    font-size: 40px;
+    margin: 15px 0;
+    color: #000;
+    text-align: center;
+}
+
+.label_box {
+    margin: 8px 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.label_box.invalid {
+    color: red;
+}
+
+.input_box {
+    width: 100%;
+    max-width: 420px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-size: 20px;
+    border: 2px solid #1E56A0;
+    border-radius: 25px;
+    color: black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.input_box.invalid {
+    border: 2px solid red;
+}
+
+.input_box:focus {
+    border: 2px solid #163172;
+    background-color: #D6E4F0;
+    box-shadow: 1px 1px 5px 1px black;
+    outline: none;
+}
+
+.error_message {
+    font-size: 18px;
+    color: red;
+    margin: 10px 0;
+}
+
+.generic_button {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 420px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 25px;
+    color: white;
+    background-color: #1E56A0;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.generic_button:hover {
+    background-color: #163172;
+    border: 2px solid #D6E4F0;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.generic_button:active {
+    color: #D6E4F0;
+    transition: 0.1s;
+}
+
+.log_reg {
+    margin: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+}
+
+.log_reg:hover {
+    color: darkblue;
+    transition: 0.2s;
+}
+
+.log_reg:active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .input_box {
+        width: 90%;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .label_box {
+        font-size: 22px;
+    }
+
+    .log_reg {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 34px;
+    }
+
+    .input_box {
+        width: 80%;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .label_box {
+        font-size: 18px;
+    }
+
+    .log_reg {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .input_box {
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .label_box {
+        font-size: 18px;
+    }
+
+    .log_reg {
+        font-size: 12px;
+    }
+}

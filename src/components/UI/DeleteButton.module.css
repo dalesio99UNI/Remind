@@ -1,0 +1,135 @@
+.delete_button{
+    width: 20%;
+    height: 40px;
+    background-color: red;
+    color: #000;
+    margin: 5px 20px;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.delete_button:hover{
+    background-color: darkred;
+    border: 2px solid #D6E4F0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete_button_alternative{
+    width: 30px;
+    height: 30px;
+    background-color: #f73d30;
+    color: white;
+    margin: 4px;
+    /* margin-left: -6px; */
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.delete_button_alternative .trash_image{
+    width: 16px;
+    height: 16px;
+}
+
+.delete_button_alternative:hover{
+    background-color: #B71C1C;
+    border: 1px solid #D6E4F0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete_button:hover .trash_image{
+    width: 21px;
+    height: 21px;
+    transition: 0.3s;
+}
+
+.delete_text{
+    color: #000;
+}
+
+.trash_image{
+    display: none;
+    width: 21px;
+    height: 21px;
+    /* transition: 0.3s; */
+}
+
+@media screen and (max-width: 800px) {
+    .delete_button{
+        width: 50px;
+        height: 40px
+    }
+
+    .delete_text{
+        display: none;
+    }
+    
+    .trash_image{
+        display: inline;
+        width: 21px;
+        height: 21px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        /* transition: 0.3s; */
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /* .delete_button{
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+    .delete_button:hover .delete_image{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .trash_image{
+        width: 16px;
+        height: 16px;
+    }
+
+    .delete_button_alternative{
+        width: 26px;
+        height: 26px;
+    }
+    
+    .delete_button_alternative .trash_image{
+        width: 14px;
+        height: 14px;
+    } */
+}
+
+@media screen and (max-width: 650px) {
+
+    /* .delete_button{
+        width: 99%;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid transparent;
+        border-radius: 0px;
+    }
+
+    .delete_button:hover{
+        border: 1px solid #D6E4F0;
+    }
+
+    .delete_button:hover .trash_image{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .trash_image{
+        width: 15px;
+        height: 15px;
+    } */
+}

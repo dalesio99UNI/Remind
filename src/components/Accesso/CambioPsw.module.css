@@ -1,0 +1,133 @@
+.wrap_center_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #282c34; */
+}
+
+.center_elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 50px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.label_box{
+    margin: 3px;
+    font-size: 30px;
+}
+
+.label_box.invalid{
+    color: red;
+}
+
+.input_box{
+    width: 420px;
+    height: 35px;
+    margin: 5px;
+    border: 2px solid #1E56A0;
+    border-radius: 20px;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    transition: 0.3s;
+}
+
+.input_box.invalid{
+    border: 2px solid red;
+}
+
+.input_box:focus{
+    border: 2px solid #163172;
+    background-color: #D6E4F0;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px 1px black;
+    outline: none;
+}
+
+.log_reg{
+    margin: 7px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.log_reg:hover{
+    color: darkblue;
+    transition: 0.2s;
+}
+
+.log_reg:active{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .title{
+        font-size: 30px;
+    }
+
+    .input_box{
+        width: 360px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .label_box{
+        font-size: 20px;
+    }
+
+    .log_reg{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title{
+        font-size: 28px;
+    }
+
+    .input_box{
+        width: 250px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .label_box{
+        font-size: 18px;
+    }
+
+    .log_reg{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .title{
+        font-size: 28px;
+    }
+    
+    .dropdown_box{
+        height: 25px;
+        font-size: 17px;
+    }
+
+    .input_box{
+        height: 23px;
+        font-size: 17px;
+    }
+
+    .label_box{
+        font-size: 18px;
+    }
+
+    .log_reg{
+        font-size: 10px;
+        margin: 3px;
+    }
+}

@@ -1,0 +1,324 @@
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px; 
+}
+
+.tooltipText {
+    visibility: hidden;
+    width: 200px;
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.wrapper_flex {
+    width: 800px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 5px;
+}
+
+.wrapper_impostazioni_gioco {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.wrapper_label_and_box {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+
+
+.wrapper_flexible {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_generico {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper_multimedia {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.preview_image {
+    width: 280px;
+    height: 175px;
+    margin: 10px;
+}
+
+.horizontal_line {
+    display: block;
+    width: 100%;
+    border: 1px solid #163172;
+}
+
+
+.wrapper_items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.title_scheda {
+    font-size: 32px;
+    text-align: center;
+    margin: 4px;
+    margin-bottom: 8px;
+}
+.mediaContainer {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.mediaItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.mediaItem input {
+    margin-right: 10px;
+}
+
+
+.mediaImage {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.label_style {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+    text-align: center; 
+}
+
+
+
+.select_style {
+    padding: 0px;
+    width: 40%; 
+    font-size: 16px;
+    
+    border-radius: 5px;
+    border: 2px solid #1E56A0;
+    text-align: center;
+}
+
+
+
+
+.label_style {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 2px;
+    text-align: center; 
+}
+
+.textbox_style {
+    padding: 0px;
+    width: 40%;
+    height: 25px;
+    font-size: 16px;
+    border: 2px solid #1E56A0;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+select.textbox_style{
+    width: 200px;
+}
+
+.textbox_style.invalid {
+    border: 2px solid red;
+}
+
+.textbox_style_NOT_ALLOWED {
+    width: 40%;
+    height: 25px;
+    font-size: 16px;
+    border: 2px solid #1E56A0;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+.textbox_style_NOT_ALLOWED.invalid {
+    border: 2px solid red;
+}
+
+.textbox_style:focus {
+    border: 2px solid #163172;
+    background-color: #D6E4F0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.textbox_style_RISPOSTE {
+    width: 80%;
+    height: 25px;
+    font-size: 16px;
+    border: 2px solid #1E56A0;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.textbox_style_RISPOSTE:focus {
+    border: 2px solid #163172;
+    background-color: #D6E4F0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.textbox_style_RISPOSTE.invalid {
+    border: 2px solid red;
+}
+
+
+@media screen and (max-width: 799px) {
+    .select_style {
+        width: 90%; 
+    }
+}
+
+
+@media screen and (max-width: 1550px) {
+    .label_style {
+        font-size: 14px;
+    }
+
+    .preview_image {
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .title_scheda {
+        font-size: 24px;
+    }
+
+    .wrapper_flex {
+        width: 550px;
+    }
+
+    .wrapper_impostazioni_gioco {
+        /* width: 500px; */
+    }
+
+    .wrapper_label_and_box {
+        flex-direction: column;
+    }
+
+    .wrapper_generico {
+        /* flex-direction: column; */
+    }
+
+    
+    .wrapper_multimedia {
+        flex-direction: column; 
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .select_style {
+        width: 80%;
+    }
+
+    .textbox_style {
+        width: 80%;
+    }
+
+    .textbox_style_NOT_ALLOWED {
+        width: 80%;
+    }
+
+    .wrapper_generico {
+        flex-direction: column;
+    }
+
+    .wrapper_multimedia {
+        flex-direction: column; 
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .wrapper_flex {
+        /* width: 340px; */
+    }
+    .wrapper_impostazioni_gioco {
+        /* width: 340px; */
+    }
+
+    .wrapper_label_and_box {
+        flex-direction: column;
+    }
+
+    .wrapper_generico {
+        flex-direction: column;
+    }
+
+    .wrapper_multimedia {
+        flex-direction: column; 
+    }
+}
+

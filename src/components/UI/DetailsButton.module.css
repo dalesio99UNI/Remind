@@ -1,0 +1,119 @@
+.details_button{
+    width: 20%;
+    height: 40px;
+    background-color: #5FD1AC;
+    color: #232931;
+    margin: 5px 20px;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: 0.3s;
+    /* animation: 0.4s normal buttons_animation forwards ease-in; */
+
+}
+
+.details_button:hover{
+    background-color: #4CA88A;
+    border: 2px solid #D6E4F0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.details_button:hover .details_image{
+    width: 21px;
+    height: 21px;
+    transition: 0.3s;
+}
+
+.details_text{
+    color: #000;
+}
+
+.details_image{
+    display: none;
+    width: 21px;
+    height: 21px;
+    /* margin-bottom: 4px; */
+    /* transition: 0.3s; */
+}
+
+@media screen and (max-width: 800px) {
+    .details_button{
+        width: 50px;
+        height: 40px;
+    }
+
+    .details_text{
+        /* color: white; */
+        display: none;
+    }
+    
+    .details_image{
+        display: inline;
+        width: 21px;
+        height: 21px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        /* transition: 0.3s; */
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /* .details_button{
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+    .details_button:hover .details_image{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .details_image{
+        width: 16px;
+        height: 16px;
+    } */
+}
+
+@media screen and (max-width: 650px) {
+
+    /* .details_button{
+        width: 99%;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid transparent;
+        border-radius: 0px;
+    }
+
+    .details_button:hover{
+        border: 1px solid #D6E4F0;
+    }
+
+    .details_button:hover .details_image{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .details_image{
+        width: 15px;
+        height: 15px;
+    } */
+}
+
+@keyframes buttons_animation {
+    0%{
+        display: none;
+        /* height: 40px; */
+        /* transform: scaleY(0); */
+        transition: 1s;
+    }
+    100%{
+        display: inline;
+        height: 40px;
+        /* transform: scaleY(1); */
+        transition: 1s;
+    }
+}

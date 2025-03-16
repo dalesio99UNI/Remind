@@ -1,0 +1,149 @@
+
+.container {
+    padding: 20px;
+    background-color: #f4f4f4; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; 
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50; 
+}
+
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.createButton {
+    background-color: #007bff;
+    color: white;
+    width: 150px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.createButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.searchInput {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+    transition: 0.3s;
+}
+
+.searchInput:focus {
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); 
+    border-color: #0056b3;
+}
+
+
+.boxContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+
+.boxItem {
+    background: white;
+    border: 2px solid #ddd; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boxItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: #007bff; 
+}
+
+
+.boxItem h3 {
+    font-size: 1.4rem;
+    color: #333; 
+}
+
+.boxItem p {
+    font-size: 1rem;
+    color: #555; 
+}
+
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actionButtons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.actionButtons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.deleteButton {
+    background-color: #e74c3c !important;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b !important;
+}
+
+
+.noResults {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+}

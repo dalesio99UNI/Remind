@@ -1,0 +1,115 @@
+.horizontal{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap_generico{
+    /* width: 650px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pre_game{
+    color: #163172;
+    font-size: 30px;
+}
+
+.domanda{
+    font-size: 30px;
+    margin: 15px;
+    color: rgb(59, 59, 241);
+    text-align: center;
+}
+
+.wrapper_gioco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.wrapper_bottoni_risposte{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card_wrapper{
+    border: 2px solid #163172;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card_image_style{
+    width: 80px;
+    height: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper_gioco{
+        height: calc(100vh - 150px);
+    }
+
+    .wrap_generico{
+        height: calc(100vh - 100px);
+    }
+
+    .card_image_style{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper_bottoni_risposte{
+        width: 300px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .card_image_style{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .pre_game{
+        font-size: 18px;
+    }
+
+    .explanation{
+        margin: 1px;
+    }
+
+    .domanda{
+        font-size: 20px;
+        margin: 4px;
+        color: rgb(59, 59, 241);
+    }
+
+    .wrapper_bottoni_risposte{
+        width: 200px;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    .card_image_style{
+        width: 40px;
+        height: 40px;
+    }
+}

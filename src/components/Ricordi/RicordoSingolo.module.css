@@ -1,0 +1,215 @@
+
+.ricordoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 650px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ricordoItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ricordoItem h3 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.ricordoItem p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ricordoItem strong {
+    font-weight: 600;
+    color: #333;
+}
+
+
+.multimediaHint {
+    font-size: 1em;
+    color: #007bff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.mediaContainer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.previewImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.previewImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.previewVideo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.previewAudio {
+    max-width: 100%;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.previewAudio:hover {
+    background-color: #f1f1f1;
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+
+.viewButton {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.viewButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.editButton {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.editButton:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+
+.mapContainer {
+    width: 100%;
+    height: 400px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ececec;
+}
+
+.leafletMap {
+    width: 100%;
+    height: 100%;
+}
+
+
+.leaflet-popup {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .ricordoItem {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .previewVideo {
+        max-height: 200px;
+    }
+
+    .previewAudio {
+        width: 100%;
+    }
+
+    .mapContainer {
+        height: 50vh;
+    }
+
+    .viewButton, .editButton, .deleteButton {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ricordoItem {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .previewAudio {
+        width: 100%;
+        height: auto;
+    }
+}
